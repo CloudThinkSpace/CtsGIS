@@ -10,7 +10,7 @@ use serde::{Deserialize, Serialize};
 /// - `leak_detection_threshold`: 连接泄漏检测阈值（单位：毫秒，超时未归还连接则报警），默认值：5000。
 /// - `keepalives`: 是否启用 TCP 保活机制（1 启用，0 禁用）,默认值：1。
 /// - `keepalives_idle`: 保活探测间隔（单位：秒），默认值：60。
-#[derive(Serialize, Deserialize, Debug)]
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct PoolConfig {
     pub minimum_idle: Option<u32>,
     pub maximum_pool_size: Option<u32>,

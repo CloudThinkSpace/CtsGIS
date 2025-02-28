@@ -6,7 +6,7 @@ use serde::{Deserialize, Serialize};
 /// - `read_only`: 是否将连接设为只读模式（适用于只读查询场景）。
 /// - `test_on_borrow`: 从池中借用连接时是否验证其有效性（可能影响性能，建议异步验证）。
 /// - `test_while_idle`: 空闲时是否定期验证连接有效性（推荐开启）。
-#[derive(Serialize, Deserialize, Debug)]
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct AdvancedConfig {
     pub pool_name: Option<String>,
     pub auto_commit: Option<bool>,

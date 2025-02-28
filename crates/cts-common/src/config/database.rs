@@ -19,7 +19,7 @@ use serde::{Deserialize, Serialize};
 /// - `pg_bouncer`: pgBouncer 专用属性配置
 /// - `pool`: 数据库连接池配置
 /// - `advanced`: 高级配置
-#[derive(Serialize, Deserialize, Debug)]
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct Database {
     pub host: String,
     pub port: u32,

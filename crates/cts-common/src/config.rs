@@ -13,7 +13,7 @@ pub mod oss;
 pub mod redis;
 pub mod server;
 
-#[derive(Serialize, Deserialize, Debug)]
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct Config {
     pub database: Database,
     pub redis: Option<RedisConfig>,

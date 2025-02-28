@@ -6,7 +6,7 @@ use serde::{Deserialize, Serialize};
 /// - `default_pool_size`: 每个数据库-用户组合的默认连接数， 默认值：20。
 /// - `reserve_pool_size`: 保留的连接数（用于突发请求），默认值：5。
 /// - `ignore_startup_parameters`: 忽略客户端指定的某些参数（优化兼容性），默认值：extra_float_digits。
-#[derive(Serialize, Deserialize, Debug)]
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct PgBouncerConfig {
     pub pool_mode: Option<bool>,
     pub max_client_conn: Option<u32>,

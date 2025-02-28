@@ -8,3 +8,5 @@ serde = { workspace = true, features = ["derive"] }
 serde_yaml.workspace = true
 thiserror.workspace = true
 log.workspace = true
+sqlx = {workspace = true, features = ["postgres"]}
+axum.workspace = true
