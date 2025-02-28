@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/crates/cts-common" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/crates/cts-gis" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/crates/cts-log" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/crates/cts-mbtiles" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/crates/cts-middleware" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/crates/cts-utils" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/crates/cts-webui" vcs="Git" />
+  </component>
+</project>

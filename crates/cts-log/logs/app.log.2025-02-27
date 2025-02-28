@@ -1,0 +1,9 @@
+2025-02-27 20:56:48  INFO cts_log::tests: crates/cts-log/src/lib.rs: info
+2025-02-27 20:56:48  WARN cts_log::tests: crates/cts-log/src/lib.rs: warn
+2025-02-27 20:56:48 ERROR cts_log::tests: crates/cts-log/src/lib.rs: error
+2025-02-27 21:03:35  INFO cts_log::tests: crates/cts-log/src/lib.rs: info
+2025-02-27 21:03:35  WARN cts_log::tests: crates/cts-log/src/lib.rs: warn
+2025-02-27 21:03:35 ERROR cts_log::tests: crates/cts-log/src/lib.rs: error
+2025-02-27 21:03:35  INFO cts_log::tests: crates/cts-log/src/lib.rs: info    
+2025-02-27 21:03:35  WARN cts_log::tests: crates/cts-log/src/lib.rs: warn    
+2025-02-27 21:03:35 ERROR cts_log::tests: crates/cts-log/src/lib.rs: error    
