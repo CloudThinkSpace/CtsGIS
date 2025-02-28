@@ -3,5 +3,5 @@ use axum::Router;
 use axum::routing::post;
 
 pub fn mbtiles_router() -> Router {
-    Router::new().route("/", post(mbtiles_handler))
+    Router::new().route("/{tiles}", post(mbtiles_handler))
 }
