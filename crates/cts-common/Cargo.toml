@@ -10,3 +10,4 @@ thiserror.workspace = true
 log.workspace = true
 sqlx = {workspace = true, features = ["postgres"]}
 axum.workspace = true
+tracing.workspace = true

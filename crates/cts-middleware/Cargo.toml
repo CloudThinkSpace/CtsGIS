@@ -7,3 +7,5 @@ edition = "2024"
 axum.workspace = true
 sqlx = {workspace = true, features = ["postgres"]}
 cts-common.workspace = true
+tracing.workspace = true
+jsonwebtoken.workspace = true
