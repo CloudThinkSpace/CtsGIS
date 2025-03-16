@@ -3,5 +3,8 @@ database:
   port: 5432
   user: postgres
   password: postgres
-  dbname: cts
+  dbname: postgres
 
+server:
+  host: localhost
+  port: 4000

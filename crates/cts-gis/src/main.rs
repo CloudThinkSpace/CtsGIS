@@ -5,5 +5,6 @@ use cts_log::init_logger;
 async fn main() {
     // 初始化日志
     let _guard = init_logger();
+    // 启动服务器
     start().await;
 }

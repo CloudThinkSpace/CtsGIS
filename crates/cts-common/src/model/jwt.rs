@@ -16,10 +16,3 @@ pub struct Claims {
 pub struct AuthError {
     pub message: String,
 }
-
-// 自定义用户上下文
-#[derive(Debug, Clone)]
-pub struct UserContext {
-    pub user_id: String,
-    pub role: String,
-}

@@ -13,3 +13,8 @@ impl FromRef<AppState> for PgPool {
         app.pool.clone()
     }
 }
+
+#[derive(Debug, Clone)]
+pub struct AppState1 {
+    pub name: String,
+}

@@ -1,16 +1,21 @@
 [workspace]
 resolver = "3"
 members = [
-    "crates/cts-common", "crates/cts-gis", "crates/cts-log", "crates/cts-mbtiles", "crates/cts-middleware", "crates/cts-utils", "crates/cts-webui",
+    "crates/cts-common",
+    "crates/cts-gis",
+    "crates/cts-log",
+    "crates/cts-mbtiles",
+    "crates/cts-middleware",
+    "crates/cts-utils",
+    "crates/cts-webui",
 ]
 [workspace.dependencies]
 # 模块依赖
 cts-common = { path = "crates/cts-common" }
-cts-gis = { path = "crates/cts-gis" }
 cts-mbtiles = { path = "crates/cts-mbtiles" }
 cts-utils = { path = "crates/cts-utils" }
-cts-middleware = { path = " crates/cts-middleware" }
-cts-log = { path = "crates/cts-log"}
+cts-middleware = { path = "crates/cts-middleware" }
+cts-log = { path = "crates/cts-log" }
 
 # 第三方库依赖
 axum = "0.8.1"
@@ -33,4 +38,4 @@ sqlx = "0.8.3"
 anyhow = "1.0.96"
 jsonwebtoken = "9.3.1"
 headers = "0.4.0"
-
+chrono = "0.4.40"

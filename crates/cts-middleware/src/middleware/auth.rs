@@ -1,10 +1,10 @@
-#![allow(unused_variables)] //允许未使用的变量
-#![allow(dead_code)] //允许未使用的代码
-#![allow(unused_must_use)]
-
-use axum::http::StatusCode;
-use axum::response::{IntoResponse, Response};
-use axum::{Json, extract::Request, middleware::Next};
+use axum::{
+    Json,
+    extract::Request,
+    http::StatusCode,
+    middleware::Next,
+    response::{IntoResponse, Response},
+};
 use chrono::Local;
 use cts_common::model::jwt::{AuthError, Claims};
 
@@ -39,29 +39,4 @@ pub async fn verify(claims: Claims) -> Result<(), Response> {
             .into_response());
     }
     Ok(())
-}
-
-#[cfg(test)]
-mod test {
-
-    use chrono::Local;
-    use cts_common::model::jwt::{Claims, SECRET};
-    use jsonwebtoken::{EncodingKey, Header};
-
-    #[test]
-    fn test1() {
-        let aa = Local::now().timestamp_millis() + 3600000;
-        let claims = Claims {
-            sub: "123".to_string(),
-            role: "123".to_string(),
-            exp: aa as usize,
-        };
-        let token = jsonwebtoken::encode(
-            &Header::default(),
-            &claims,
-            &EncodingKey::from_secret(SECRET.as_ref()),
-        );
-
-        println!("{:?}", token);
-    }
 }

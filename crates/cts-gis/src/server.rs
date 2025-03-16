@@ -1,12 +1,35 @@
-use log::info;
-use crate::route::root_route;
-use tokio::net::TcpListener;
-use cts_common::utils::ip::get_local_ip;
+use std::sync::Arc;
 
+use crate::route::root_route;
+use axum::Extension;
+use cts_common::{config::Config, state::AppState, utils::ip::get_local_ip};
+use tokio::net::TcpListener;
+
+/// @description 服务启动函数
 pub async fn start() {
-    info!("starting server: http://localhost:4000");
-    info!("starting server: http://{}:4000", get_local_ip().unwrap());
-    let app = root_route();
-    let listener = TcpListener::bind("0.0.0.0:4000").await.unwrap();
+    // 加载配置文件
+    let config = match Config::load() {
+        Ok(data) => data,
+        Err(_) => return,
+    };
+    // 服务器配置
+    let server = &config.server;
+    let database = &config.database;
+    // 数据库连接池
+    let pg_pool = database.new_pool().await;
+    // 打印服务器信息
+    println!("starting server: http://{}:{}", &server.host, &server.port);
+    println!(
+        "starting server: http://{}:{}",
+        get_local_ip().unwrap(),
+        &server.port
+    );
+    // 路由
+    let app = root_route().layer(Extension(Arc::new(pg_pool)));
+    // 监听服务
+    let listener = TcpListener::bind(format!("{}:{}", server.host, server.port))
+        .await
+        .unwrap();
+    // 启动服务
     axum::serve(listener, app).await.unwrap();
 }

@@ -8,7 +8,9 @@ use axum::response::Response;
 use std::time::Instant;
 use tracing::info;
 
-async fn logging_middleware(request: Request, next: Next) -> Response {
+/// 日志打印中间件
+/// @description 打印请求耗时
+pub async fn logging_middleware(request: Request, next: Next) -> Response {
     // 请求方法
     let method = request.method().clone();
     // 请求路径

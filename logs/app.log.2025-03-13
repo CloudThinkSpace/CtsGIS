@@ -1,0 +1,47 @@
+2025-03-13 21:16:33  INFO cts_common::config: crates/cts-common/src/config.rs: Read the configuration file from: config/config.yml    
+2025-03-13 21:17:28  INFO cts_common::config: crates/cts-common/src/config.rs: Read the configuration file from: config/config.yml    
+2025-03-13 21:17:28  INFO cts_common::config: crates/cts-common/src/config.rs: Loading the config file succeeded.    
+2025-03-13 21:17:28  INFO cts_gis::server: /Users/tanghy/develop/rust/CtsGIS/crates/cts-gis/src/server.rs: starting server: http://localhost:4000    
+2025-03-13 21:17:28  INFO cts_gis::server: /Users/tanghy/develop/rust/CtsGIS/crates/cts-gis/src/server.rs: starting server: http://198.18.0.1:4000    
+2025-03-13 21:21:03  INFO cts_common::config: crates/cts-common/src/config.rs: Read the configuration file from: config/config.yml    
+2025-03-13 21:21:03  INFO cts_common::config: crates/cts-common/src/config.rs: Loading the config file succeeded.    
+2025-03-13 21:21:03  INFO cts_gis::server: /Users/tanghy/develop/rust/CtsGIS/crates/cts-gis/src/server.rs: starting server: http://localhost:4000    
+2025-03-13 21:21:03  INFO cts_gis::server: /Users/tanghy/develop/rust/CtsGIS/crates/cts-gis/src/server.rs: starting server: http://198.18.0.1:4000    
+2025-03-13 21:56:53  INFO cts_common::config: crates/cts-common/src/config.rs: Read the configuration file from: config/config.yml    
+2025-03-13 21:56:53  INFO cts_common::config: crates/cts-common/src/config.rs: Loading the config file succeeded.    
+2025-03-13 21:56:53  INFO cts_gis::server: /Users/tanghy/develop/rust/CtsGIS/crates/cts-gis/src/server.rs: starting server: http://localhost:4000    
+2025-03-13 21:56:53  INFO cts_gis::server: /Users/tanghy/develop/rust/CtsGIS/crates/cts-gis/src/server.rs: starting server: http://198.18.0.1:4000    
+2025-03-13 21:57:08  INFO cts_middleware::log: crates/cts-middleware/src/log.rs: →→→ GET / started
+2025-03-13 21:57:08  INFO cts_middleware::log: crates/cts-middleware/src/log.rs: ←←← GET / completed in 0ms (status: 200 OK)
+2025-03-13 21:57:10  INFO cts_middleware::log: crates/cts-middleware/src/log.rs: →→→ GET / started
+2025-03-13 21:57:10  INFO cts_middleware::log: crates/cts-middleware/src/log.rs: ←←← GET / completed in 0ms (status: 200 OK)
+2025-03-13 22:23:49  INFO cts_common::config: crates/cts-common/src/config.rs: Read the configuration file from: config/config.yml    
+2025-03-13 22:23:49  INFO cts_common::config: crates/cts-common/src/config.rs: Loading the config file succeeded.    
+2025-03-13 22:23:49  INFO cts_gis::server: /Users/tanghy/develop/rust/CtsGIS/crates/cts-gis/src/server.rs: starting server: http://localhost:4000    
+2025-03-13 22:23:49  INFO cts_gis::server: /Users/tanghy/develop/rust/CtsGIS/crates/cts-gis/src/server.rs: starting server: http://198.18.0.1:4000    
+2025-03-13 22:23:58  INFO cts_middleware::log: crates/cts-middleware/src/log.rs: →→→ GET / started
+2025-03-13 22:24:03  INFO cts_middleware::log: crates/cts-middleware/src/log.rs: ←←← GET / completed in 5004ms (status: 200 OK)
+2025-03-13 22:24:20  INFO cts_middleware::log: crates/cts-middleware/src/log.rs: →→→ GET / started
+2025-03-13 22:24:25  INFO cts_middleware::log: crates/cts-middleware/src/log.rs: ←←← GET / completed in 5004ms (status: 200 OK)
+2025-03-13 22:24:41  INFO cts_common::config: crates/cts-common/src/config.rs: Read the configuration file from: config/config.yml    
+2025-03-13 22:24:41  INFO cts_common::config: crates/cts-common/src/config.rs: Loading the config file succeeded.    
+2025-03-13 22:24:41  INFO cts_gis::server: /Users/tanghy/develop/rust/CtsGIS/crates/cts-gis/src/server.rs: starting server: http://localhost:4000    
+2025-03-13 22:24:41  INFO cts_gis::server: /Users/tanghy/develop/rust/CtsGIS/crates/cts-gis/src/server.rs: starting server: http://198.18.0.1:4000    
+2025-03-13 22:24:44  INFO cts_middleware::log: crates/cts-middleware/src/log.rs: →→→ GET / started
+2025-03-13 22:24:44  INFO cts_middleware::log: crates/cts-middleware/src/log.rs: ←←← GET / completed in 0ms (status: 200 OK)
+2025-03-13 22:29:36  INFO cts_common::config: crates/cts-common/src/config.rs: Read the configuration file from: config/config.yml    
+2025-03-13 22:29:36  INFO cts_common::config: crates/cts-common/src/config.rs: Loading the config file succeeded.    
+2025-03-13 22:29:36  INFO cts_gis::server: /Users/tanghy/develop/rust/CtsGIS/crates/cts-gis/src/server.rs: starting server: http://localhost:4000    
+2025-03-13 22:29:36  INFO cts_gis::server: /Users/tanghy/develop/rust/CtsGIS/crates/cts-gis/src/server.rs: starting server: http://198.18.0.1:4000    
+2025-03-13 23:36:22  INFO cts_middleware::log: crates/cts-middleware/src/log.rs: →→→ GET / started
+2025-03-13 23:36:22  INFO cts_middleware::log: crates/cts-middleware/src/log.rs: ←←← GET / completed in 1ms (status: 200 OK)
+2025-03-13 23:40:55  INFO cts_common::config: crates/cts-common/src/config.rs: Read the configuration file from: config/config.yml    
+2025-03-13 23:40:55  INFO cts_common::config: crates/cts-common/src/config.rs: Loading the config file succeeded.    
+2025-03-13 23:40:55  INFO cts_gis::server: /Users/tanghy/develop/rust/CtsGIS/crates/cts-gis/src/server.rs: starting server: http://localhost:4000    
+2025-03-13 23:40:55  INFO cts_gis::server: /Users/tanghy/develop/rust/CtsGIS/crates/cts-gis/src/server.rs: starting server: http://192.168.101.2:4000    
+2025-03-13 23:45:50  INFO cts_common::config: crates/cts-common/src/config.rs: Read the configuration file from: config/config.yml    
+2025-03-13 23:45:50  INFO cts_common::config: crates/cts-common/src/config.rs: Loading the config file succeeded.    
+2025-03-13 23:45:50  INFO cts_gis::server: /Users/tanghy/develop/rust/CtsGIS/crates/cts-gis/src/server.rs: starting server: http://localhost:4000    
+2025-03-13 23:45:50  INFO cts_gis::server: /Users/tanghy/develop/rust/CtsGIS/crates/cts-gis/src/server.rs: starting server: http://192.168.101.2:4000    
+2025-03-13 23:48:10  INFO cts_middleware::log: crates/cts-middleware/src/log.rs: →→→ GET / started
+2025-03-13 23:48:10  INFO cts_middleware::log: crates/cts-middleware/src/log.rs: ←←← GET / completed in 0ms (status: 200 OK)

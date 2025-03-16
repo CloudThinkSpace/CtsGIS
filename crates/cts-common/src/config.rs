@@ -1,8 +1,9 @@
-use crate::config::database::Database;
 use crate::config::error::ConfigError;
 use crate::config::redis::RedisConfig;
 use ::log::info;
+use database::DatabaseConfig;
 use serde::{Deserialize, Serialize};
+use server::ServerConfig;
 use std::fs;
 
 pub mod database;
@@ -15,8 +16,9 @@ pub mod server;
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct Config {
-    pub database: Database,
+    pub database: DatabaseConfig,
     pub redis: Option<RedisConfig>,
+    pub server: ServerConfig,
 }
 
 impl Config {

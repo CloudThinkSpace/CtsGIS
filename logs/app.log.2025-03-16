@@ -1,0 +1,10 @@
+2025-03-16 17:37:14  INFO cts_common::config: crates/cts-common/src/config.rs: Read the configuration file from: config/config.yml    
+2025-03-16 17:37:14  INFO cts_common::config: crates/cts-common/src/config.rs: Loading the config file succeeded.    
+2025-03-16 17:56:36  INFO cts_common::config: crates/cts-common/src/config.rs: Read the configuration file from: config/config.yml    
+2025-03-16 17:56:36  INFO cts_common::config: crates/cts-common/src/config.rs: Loading the config file succeeded.    
+2025-03-16 19:29:13  INFO cts_common::config: crates/cts-common/src/config.rs: Read the configuration file from: config/config.yml    
+2025-03-16 19:29:13  INFO cts_common::config: crates/cts-common/src/config.rs: Loading the config file succeeded.    
+2025-03-16 20:43:17  INFO cts_common::config: crates/cts-common/src/config.rs: Read the configuration file from: config/config.yml    
+2025-03-16 20:43:17  INFO cts_common::config: crates/cts-common/src/config.rs: Loading the config file succeeded.    
+2025-03-16 20:50:44  INFO cts_common::config: crates/cts-common/src/config.rs: Read the configuration file from: config/config.yml    
+2025-03-16 20:50:44  INFO cts_common::config: crates/cts-common/src/config.rs: Loading the config file succeeded.    
