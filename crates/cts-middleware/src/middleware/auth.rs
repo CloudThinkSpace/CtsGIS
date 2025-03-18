@@ -7,6 +7,7 @@ use axum::{
 };
 use chrono::Local;
 use cts_common::model::jwt::{AuthError, Claims};
+use tracing::info;
 
 use crate::extract::auth::AuthInfo;
 
@@ -30,6 +31,7 @@ pub async fn verify(claims: Claims) -> Result<(), Response> {
     let exp_time = claims.exp;
     // 判断是否token时间是否过去
     if start_time > exp_time {
+        info!("开始时间：{},\n结束时间：{}", start_time, exp_time);
         return Err((
             StatusCode::UNAUTHORIZED,
             Json(AuthError {

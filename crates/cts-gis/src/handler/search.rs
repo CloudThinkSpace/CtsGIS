@@ -1,15 +1,49 @@
+use axum::Json;
 use axum::extract::Path;
 use axum::response::IntoResponse;
+use cts_middleware::extract::db::DbPool;
+use cts_sql_expression::config::ExpressionConfig;
+use cts_sql_expression::expression::sql::SqlBuilder;
+use cts_sql_expression::request::CtsParam;
+use response_utils::res::ResResult;
 
-pub async fn search_handler(Path(table_name): Path<String>) -> impl IntoResponse {
-    println!("{:#?}", table_name);
-    "Welcome to CTS GIS Server!".into_response()
+pub async fn search_handler(
+    DbPool(pool): DbPool,
+    Path(table_name): Path<String>,
+    Json(param): Json<CtsParam>,
+) -> impl IntoResponse {
+    let param = param.search_param();
+    // 获取数据库连接池
+    let pool = pool.as_ref();
+    // 配置
+    let config = ExpressionConfig::new(None, None);
+    let result = SqlBuilder::new_search(pool, table_name, config, param)
+        .query()
+        .await;
+    match result {
+        Ok(data) => {
+            let result = data.to_json();
+            ResResult::with_success(result)
+        }
+        Err(err) => ResResult::<()>::with_error(&err.to_string()),
+    }
 }
 
 pub async fn query_handler(
+    DbPool(pool): DbPool,
     Path(table_name): Path<String>,
     Path(id): Path<String>,
+    Json(param): Json<CtsParam>,
 ) -> impl IntoResponse {
-    println!("{:#?}, {}", table_name, id);
-    "Welcome to CTS GIS Server!".into_response()
+    // 获取数据库连接池
+    let pool = pool.as_ref();
+    // 表达式配置
+    let config = ExpressionConfig::new(None, None);
+    let result = SqlBuilder::new_simplify(pool, table_name, config, param, id)
+        .query_one()
+        .await;
+    match result {
+        Ok(data) => ResResult::with_success(data),
+        Err(err) => ResResult::<()>::with_error(&err.to_string()),
+    }
 }

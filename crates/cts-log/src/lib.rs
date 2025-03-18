@@ -7,9 +7,9 @@ use tracing_subscriber::{
     util::SubscriberInitExt,
 };
 
-pub fn init_logger() -> WorkerGuard {
+pub fn init_logger(log: &str) -> WorkerGuard {
     // 配置日志过滤器
-    let env_filter = EnvFilter::try_from_default_env().unwrap_or_else(|_| EnvFilter::new("info"));
+    let env_filter = EnvFilter::try_from_default_env().unwrap_or_else(|_| EnvFilter::new(log));
     // 配置日志时间格式
     // 配置时区为东8区，
     let offset = UtcOffset::from_hms(8, 0, 0).unwrap_or(UtcOffset::UTC);
@@ -51,13 +51,13 @@ pub fn init_logger() -> WorkerGuard {
 
 #[cfg(test)]
 mod tests {
-    use log::{debug, error, info, warn};
     use crate::init_logger;
+    use log::{debug, error, info, warn};
 
     #[test]
     fn test() {
         // 初始化日志
-        let _guard = init_logger();
+        let _guard = init_logger("debug");
 
         // 日志级别配置为 "info"，所以debug级别的日志不会打印
         tracing::debug!("debug");

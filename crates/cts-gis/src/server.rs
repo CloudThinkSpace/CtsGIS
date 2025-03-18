@@ -2,7 +2,7 @@ use std::sync::Arc;
 
 use crate::route::root_route;
 use axum::Extension;
-use cts_common::{config::Config, state::AppState, utils::ip::get_local_ip};
+use cts_common::{config::Config, utils::ip::get_local_ip};
 use tokio::net::TcpListener;
 
 /// @description 服务启动函数

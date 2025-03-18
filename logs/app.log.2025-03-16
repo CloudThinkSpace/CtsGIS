@@ -8,3 +8,61 @@
 2025-03-16 20:43:17  INFO cts_common::config: crates/cts-common/src/config.rs: Loading the config file succeeded.    
 2025-03-16 20:50:44  INFO cts_common::config: crates/cts-common/src/config.rs: Read the configuration file from: config/config.yml    
 2025-03-16 20:50:44  INFO cts_common::config: crates/cts-common/src/config.rs: Loading the config file succeeded.    
+2025-03-16 21:24:41  INFO cts_common::config: crates/cts-common/src/config.rs: Read the configuration file from: config/config.yml    
+2025-03-16 21:24:41  INFO cts_common::config: crates/cts-common/src/config.rs: Loading the config file succeeded.    
+2025-03-16 21:53:14  INFO cts_common::config: crates/cts-common/src/config.rs: Read the configuration file from: config/config.yml    
+2025-03-16 21:53:14  INFO cts_common::config: crates/cts-common/src/config.rs: Loading the config file succeeded.    
+2025-03-16 21:55:46  INFO cts_common::config: crates/cts-common/src/config.rs: Read the configuration file from: config/config.yml    
+2025-03-16 21:55:46  INFO cts_common::config: crates/cts-common/src/config.rs: Loading the config file succeeded.    
+2025-03-16 21:57:29  INFO cts_common::config: crates/cts-common/src/config.rs: Read the configuration file from: config/config.yml    
+2025-03-16 21:57:29  INFO cts_common::config: crates/cts-common/src/config.rs: Loading the config file succeeded.    
+2025-03-16 22:00:48  INFO cts_common::config: crates/cts-common/src/config.rs: Read the configuration file from: config/config.yml    
+2025-03-16 22:00:48  INFO cts_common::config: crates/cts-common/src/config.rs: Loading the config file succeeded.    
+2025-03-16 22:02:25  INFO cts_common::config: crates/cts-common/src/config.rs: Read the configuration file from: config/config.yml    
+2025-03-16 22:02:25  INFO cts_common::config: crates/cts-common/src/config.rs: Loading the config file succeeded.    
+2025-03-16 22:05:10  INFO cts_common::config: crates/cts-common/src/config.rs: Read the configuration file from: config/config.yml    
+2025-03-16 22:05:10  INFO cts_common::config: crates/cts-common/src/config.rs: Loading the config file succeeded.    
+2025-03-16 22:05:16  INFO cts_middleware::middleware::auth: crates/cts-middleware/src/middleware/auth.rs: 开始时间：1742133916945,
+结束时间：1742133755310
+2025-03-16 22:06:43  INFO cts_common::config: crates/cts-common/src/config.rs: Read the configuration file from: config/config.yml    
+2025-03-16 22:06:43  INFO cts_common::config: crates/cts-common/src/config.rs: Loading the config file succeeded.    
+2025-03-16 22:06:48  INFO cts_middleware::middleware::auth: crates/cts-middleware/src/middleware/auth.rs: 开始时间：1742134008196,
+结束时间：1742133755310
+2025-03-16 22:07:04  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ POST /feature/pct started
+2025-03-16 22:07:05  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← POST /feature/pct completed in 715ms (status: 200 OK)
+2025-03-16 22:07:08  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ POST /feature/pct started
+2025-03-16 22:07:09  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← POST /feature/pct completed in 469ms (status: 200 OK)
+2025-03-16 22:55:41  INFO cts_common::config: crates/cts-common/src/config.rs: Read the configuration file from: config/config.yml    
+2025-03-16 22:55:41  INFO cts_common::config: crates/cts-common/src/config.rs: Loading the config file succeeded.    
+2025-03-16 22:55:53  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ POST /feature/pct started
+2025-03-16 22:55:53  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← POST /feature/pct completed in 6ms (status: 503 Service Unavailable)
+2025-03-16 22:56:32  INFO cts_common::config: crates/cts-common/src/config.rs: Read the configuration file from: config/config.yml    
+2025-03-16 22:56:32  INFO cts_common::config: crates/cts-common/src/config.rs: Loading the config file succeeded.    
+2025-03-16 22:56:45  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ POST /feature/pct started
+2025-03-16 22:56:46  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← POST /feature/pct completed in 800ms (status: 200 OK)
+2025-03-16 22:57:56  INFO cts_common::config: crates/cts-common/src/config.rs: Read the configuration file from: config/config.yml    
+2025-03-16 22:57:56  INFO cts_common::config: crates/cts-common/src/config.rs: Loading the config file succeeded.    
+2025-03-16 22:58:07  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ POST /feature/pct started
+2025-03-16 22:58:07  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← POST /feature/pct completed in 77ms (status: 200 OK)
+2025-03-16 22:58:09  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ POST /feature/pct started
+2025-03-16 22:58:09  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← POST /feature/pct completed in 57ms (status: 200 OK)
+2025-03-16 22:58:11  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ POST /feature/pct started
+2025-03-16 22:58:11  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← POST /feature/pct completed in 55ms (status: 200 OK)
+2025-03-16 23:07:36  INFO cts_common::config: crates/cts-common/src/config.rs: Read the configuration file from: config/config.yml    
+2025-03-16 23:07:36  INFO cts_common::config: crates/cts-common/src/config.rs: Loading the config file succeeded.    
+2025-03-16 23:07:44  INFO cts_middleware::middleware::auth: crates/cts-middleware/src/middleware/auth.rs: 开始时间：1742137664303,
+结束时间：1742137611408
+2025-03-16 23:07:46  INFO cts_middleware::middleware::auth: crates/cts-middleware/src/middleware/auth.rs: 开始时间：1742137666300,
+结束时间：1742137611408
+2025-03-16 23:07:46  INFO cts_middleware::middleware::auth: crates/cts-middleware/src/middleware/auth.rs: 开始时间：1742137666866,
+结束时间：1742137611408
+2025-03-16 23:07:47  INFO cts_middleware::middleware::auth: crates/cts-middleware/src/middleware/auth.rs: 开始时间：1742137667117,
+结束时间：1742137611408
+2025-03-16 23:07:47  INFO cts_middleware::middleware::auth: crates/cts-middleware/src/middleware/auth.rs: 开始时间：1742137667329,
+结束时间：1742137611408
+2025-03-16 23:07:47  INFO cts_middleware::middleware::auth: crates/cts-middleware/src/middleware/auth.rs: 开始时间：1742137667518,
+结束时间：1742137611408
+2025-03-16 23:08:04  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ POST /feature/pct started
+2025-03-16 23:08:04  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← POST /feature/pct completed in 821ms (status: 200 OK)
+2025-03-16 23:09:46  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ POST /feature/xfsysj started
+2025-03-16 23:09:46  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← POST /feature/xfsysj completed in 9ms (status: 200 OK)

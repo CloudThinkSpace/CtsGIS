@@ -16,6 +16,9 @@ cts-mbtiles = { path = "crates/cts-mbtiles" }
 cts-utils = { path = "crates/cts-utils" }
 cts-middleware = { path = "crates/cts-middleware" }
 cts-log = { path = "crates/cts-log" }
+response_utils = { git = "https://github.com/CloudThinkSpace/cts-base", package = "response_utils", version = "0.1.1" }
+cts-pgrow = { git = "https://github.com/CloudThinkSpace/cts-base", package = "cts-pgrow", version = "0.1.1" }
+cts-sql-expression = { git = "https://github.com/CloudThinkSpace/cts-base", package = "cts-sql-expression", version = "0.1.0" }
 
 # 第三方库依赖
 axum = "0.8.1"
