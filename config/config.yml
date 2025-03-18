@@ -4,6 +4,7 @@ database:
   user: postgres
   password: postgres
   dbname: postgres
+  schema: public
 
 server:
   host: localhost
