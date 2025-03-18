@@ -36,6 +36,7 @@ pub struct DatabaseConfig {
     pub pg_bouncer: Option<PgBouncerConfig>,
     pub pool: Option<PoolConfig>,
     pub advanced: Option<AdvancedConfig>,
+    pub schema: Option<String>,
 }
 
 impl DatabaseConfig {

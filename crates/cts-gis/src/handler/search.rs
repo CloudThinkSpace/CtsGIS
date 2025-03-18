@@ -1,6 +1,7 @@
 use axum::Json;
 use axum::extract::Path;
 use axum::response::IntoResponse;
+use cts_middleware::extract::config::CtsConfig;
 use cts_middleware::extract::db::DbPool;
 use cts_sql_expression::config::ExpressionConfig;
 use cts_sql_expression::expression::sql::SqlBuilder;
@@ -9,13 +10,15 @@ use response_utils::res::ResResult;
 
 pub async fn search_handler(
     DbPool(pool): DbPool,
+    CtsConfig(config): CtsConfig,
     Path(table_name): Path<String>,
     Json(param): Json<CtsParam>,
 ) -> impl IntoResponse {
     // 获取数据库连接池
     let pool = pool.as_ref();
+    let schema = config.database.schema.clone();
     // 配置
-    let config = ExpressionConfig::new_normal(None);
+    let config = ExpressionConfig::new_normal(schema);
     let result = SqlBuilder::new(pool, table_name, config, param)
         .query()
         .await;
@@ -30,14 +33,16 @@ pub async fn search_handler(
 
 pub async fn query_handler(
     DbPool(pool): DbPool,
+    CtsConfig(config): CtsConfig,
     Path(table_name): Path<String>,
     Path(id): Path<String>,
     Json(param): Json<CtsParam>,
 ) -> impl IntoResponse {
     // 获取数据库连接池
     let pool = pool.as_ref();
+    let schema = config.database.schema.clone();
     // 表达式配置
-    let config = ExpressionConfig::new_normal(None);
+    let config = ExpressionConfig::new_normal(schema);
     let result = SqlBuilder::new_simplify(pool, table_name, config, param, id)
         .query_one()
         .await;

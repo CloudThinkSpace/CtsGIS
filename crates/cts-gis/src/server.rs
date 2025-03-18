@@ -25,7 +25,9 @@ pub async fn start() {
         &server.port
     );
     // 路由
-    let app = root_route().layer(Extension(Arc::new(pg_pool)));
+    let app = root_route()
+        .layer(Extension(Arc::new(pg_pool)))
+        .layer(Extension(Arc::new(config.clone())));
     // 监听服务
     let listener = TcpListener::bind(format!("{}:{}", server.host, server.port))
         .await
