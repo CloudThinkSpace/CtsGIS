@@ -12,12 +12,11 @@ pub async fn search_handler(
     Path(table_name): Path<String>,
     Json(param): Json<CtsParam>,
 ) -> impl IntoResponse {
-    let param = param.search_param();
     // 获取数据库连接池
     let pool = pool.as_ref();
     // 配置
-    let config = ExpressionConfig::new(None, None);
-    let result = SqlBuilder::new_search(pool, table_name, config, param)
+    let config = ExpressionConfig::new_normal(None);
+    let result = SqlBuilder::new(pool, table_name, config, param)
         .query()
         .await;
     match result {
@@ -38,7 +37,7 @@ pub async fn query_handler(
     // 获取数据库连接池
     let pool = pool.as_ref();
     // 表达式配置
-    let config = ExpressionConfig::new(None, None);
+    let config = ExpressionConfig::new_normal(None);
     let result = SqlBuilder::new_simplify(pool, table_name, config, param, id)
         .query_one()
         .await;

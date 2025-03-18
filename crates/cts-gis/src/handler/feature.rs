@@ -1,26 +1,28 @@
+use axum::Json;
 use axum::extract::Path;
 use axum::response::IntoResponse;
 use cts_middleware::extract::db::DbPool;
-use cts_pgrow::SerMapPgRow;
+use cts_sql_expression::config::ExpressionConfig;
+use cts_sql_expression::expression::sql::SqlBuilder;
+use cts_sql_expression::request::CtsParam;
 use response_utils::res::ResResult;
-use serde_json::Value;
-use sqlx::QueryBuilder;
 
 pub async fn feature_handler(
     DbPool(pool): DbPool,
     Path(feature_name): Path<String>,
+    Json(param): Json<CtsParam>,
 ) -> impl IntoResponse {
-    let mut builder = QueryBuilder::new("select * from ");
-    let query = builder.push(feature_name).build();
-    let rows = query.fetch_all(pool.as_ref()).await;
-    match rows {
+    let param = param.search_param();
+    // 获取数据库连接池
+    let pool = pool.as_ref();
+    // 配置
+    let config = ExpressionConfig::new(None);
+    let result = SqlBuilder::new(pool, feature_name, config, param)
+        .query()
+        .await;
+    match result {
         Ok(data) => {
-            let mut result = Vec::new();
-            for row in data.into_iter() {
-                let map = SerMapPgRow::from(row);
-                let data: Value = map.into();
-                result.push(data);
-            }
+            let result = data.to_json();
             ResResult::with_success(result)
         }
         Err(err) => ResResult::<()>::with_error(&err.to_string()),
@@ -30,19 +32,17 @@ pub async fn feature_handler(
 pub async fn feature_id_handler(
     DbPool(pool): DbPool,
     Path((feature_name, id)): Path<(String, String)>,
+    Json(param): Json<CtsParam>,
 ) -> impl IntoResponse {
-    let mut builder = QueryBuilder::new("select * from ");
-    builder.push(feature_name);
-    builder.push(" where id = ");
-    builder.push_bind(id);
-    let query = builder.build();
-    let row = query.fetch_one(pool.as_ref()).await;
-    match row {
-        Ok(data) => {
-            let map = SerMapPgRow::from(data);
-            let data: Value = map.into();
-            ResResult::with_success(data)
-        }
+    // 获取数据库连接池
+    let pool = pool.as_ref();
+    // 表达式配置
+    let config = ExpressionConfig::new(None);
+    let result = SqlBuilder::new_simplify(pool, feature_name, config, param, id)
+        .query_one()
+        .await;
+    match result {
+        Ok(data) => ResResult::with_success(data),
         Err(err) => ResResult::<()>::with_error(&err.to_string()),
     }
 }
