@@ -149,3 +149,65 @@
 2025-03-18 15:34:54  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ POST /search/county started
 2025-03-18 15:34:54 DEBUG sqlx::query: /Users/tanghy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sqlx-core-0.8.3/src/logger.rs: summary="select pxzqdm as aaa,pxzqmc,id …" db.statement="\n\nselect pxzqdm as aaa,pxzqmc,id from public.county\n" rows_affected=22 rows_returned=22 elapsed=1.273865ms elapsed_secs=0.001273865
 2025-03-18 15:34:54  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← POST /search/county completed in 3ms (status: 200 OK)
+2025-03-18 15:57:17  INFO cts_common::config: crates/cts-common/src/config.rs: Read the configuration file from: config/config.yml    
+2025-03-18 15:57:17  INFO cts_common::config: crates/cts-common/src/config.rs: Loading the config file succeeded.    
+2025-03-18 15:58:45  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ POST /aggregate/city started
+2025-03-18 15:58:45 DEBUG sqlx::query: /Users/tanghy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sqlx-core-0.8.3/src/logger.rs: summary="select * from public.city …" db.statement="\n\nselect * from public.city where ztjscs is not null \n" rows_affected=0 rows_returned=0 elapsed=2.008368ms elapsed_secs=0.002008368
+2025-03-18 15:58:45  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← POST /aggregate/city completed in 5ms (status: 500 Internal Server Error)
+2025-03-18 15:59:02  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ POST /search/county started
+2025-03-18 15:59:02 DEBUG sqlx::query: /Users/tanghy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sqlx-core-0.8.3/src/logger.rs: summary="select pxzqdm as aaa,pxzqmc,id …" db.statement="\n\nselect pxzqdm as aaa,pxzqmc,id from public.county\n" rows_affected=22 rows_returned=22 elapsed=9.268457ms elapsed_secs=0.009268457
+2025-03-18 15:59:02  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← POST /search/county completed in 11ms (status: 200 OK)
+2025-03-18 15:59:52  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ POST /aggregate/city started
+2025-03-18 15:59:52  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← POST /aggregate/city completed in 0ms (status: 500 Internal Server Error)
+2025-03-18 15:59:58  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ POST /aggregate/city started
+2025-03-18 15:59:58 DEBUG sqlx::query: /Users/tanghy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sqlx-core-0.8.3/src/logger.rs: summary="select * from public.city …" db.statement="\n\nselect * from public.city where ztjscs is not null \n" rows_affected=0 rows_returned=0 elapsed=1.781548ms elapsed_secs=0.001781548
+2025-03-18 15:59:58  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← POST /aggregate/city completed in 4ms (status: 500 Internal Server Error)
+2025-03-18 16:00:07  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ POST /aggregate/city started
+2025-03-18 16:00:07 DEBUG sqlx::query: /Users/tanghy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sqlx-core-0.8.3/src/logger.rs: summary="SELECT oid::regtype::text, typtype, typcategory, …" db.statement="\n\nSELECT oid::regtype::text, typtype, typcategory, typrelid, typelem, typbasetype FROM pg_catalog.pg_type WHERE oid = $1\n" rows_affected=0 rows_returned=1 elapsed=7.95876ms elapsed_secs=0.00795876
+2025-03-18 16:00:07 DEBUG sqlx::query: /Users/tanghy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sqlx-core-0.8.3/src/logger.rs: summary="select * from public.city …" db.statement="\n\nselect * from public.city where pxzqmc is not null \n" rows_affected=5 rows_returned=5 elapsed=96.796565ms elapsed_secs=0.096796565
+2025-03-18 16:00:08  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← POST /aggregate/city completed in 619ms (status: 200 OK)
+2025-03-18 16:00:23  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ POST /aggregate/city started
+2025-03-18 16:00:23 DEBUG sqlx::query: /Users/tanghy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sqlx-core-0.8.3/src/logger.rs: summary="select * from public.city …" db.statement="\n\nselect * from public.city where pxzqmc is not null \n" rows_affected=5 rows_returned=5 elapsed=35.291743ms elapsed_secs=0.035291743
+2025-03-18 16:00:23  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← POST /aggregate/city completed in 536ms (status: 200 OK)
+2025-03-18 16:02:36  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ POST /aggregate/city started
+2025-03-18 16:02:36 DEBUG sqlx::query: /Users/tanghy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sqlx-core-0.8.3/src/logger.rs: summary="select * from public.city" db.statement="" rows_affected=5 rows_returned=5 elapsed=32.621732ms elapsed_secs=0.032621732
+2025-03-18 16:02:36  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← POST /aggregate/city completed in 534ms (status: 200 OK)
+2025-03-18 16:03:09  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ POST /aggregate/city started
+2025-03-18 16:03:09 DEBUG sqlx::query: /Users/tanghy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sqlx-core-0.8.3/src/logger.rs: summary="select * from public.city" db.statement="" rows_affected=5 rows_returned=5 elapsed=36.676151ms elapsed_secs=0.036676151
+2025-03-18 16:03:10  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← POST /aggregate/city completed in 550ms (status: 200 OK)
+2025-03-18 16:08:52  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ POST /aggregate/city started
+2025-03-18 16:08:52 DEBUG sqlx::query: /Users/tanghy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sqlx-core-0.8.3/src/logger.rs: summary="select pxzqmc as name …" db.statement="\n\nselect pxzqmc as name from public.city\n" rows_affected=5 rows_returned=5 elapsed=2.97081ms elapsed_secs=0.00297081
+2025-03-18 16:08:52  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← POST /aggregate/city completed in 5ms (status: 200 OK)
+2025-03-18 16:13:49  INFO cts_middleware::middleware::auth: crates/cts-middleware/src/middleware/auth.rs: 开始时间：1742285629918,
+结束时间：1742285365535
+2025-03-18 16:13:52  INFO cts_middleware::middleware::auth: crates/cts-middleware/src/middleware/auth.rs: 开始时间：1742285632053,
+结束时间：1742285365535
+2025-03-18 16:14:05  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ POST /aggregate/city started
+2025-03-18 16:14:06 DEBUG sqlx::query: /Users/tanghy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sqlx-core-0.8.3/src/logger.rs: summary="select * from public.city" db.statement="" rows_affected=5 rows_returned=5 elapsed=40.666424ms elapsed_secs=0.040666424
+2025-03-18 16:14:06  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← POST /aggregate/city completed in 583ms (status: 200 OK)
+2025-03-18 16:14:57  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ POST /aggregate/city started
+2025-03-18 16:14:57 DEBUG sqlx::query: /Users/tanghy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sqlx-core-0.8.3/src/logger.rs: summary="select * from public.city" db.statement="" rows_affected=5 rows_returned=5 elapsed=34.436922ms elapsed_secs=0.034436922
+2025-03-18 16:14:57  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← POST /aggregate/city completed in 540ms (status: 200 OK)
+2025-03-18 16:18:31  INFO cts_common::config: crates/cts-common/src/config.rs: Read the configuration file from: config/config.yml    
+2025-03-18 16:18:31  INFO cts_common::config: crates/cts-common/src/config.rs: Loading the config file succeeded.    
+2025-03-18 16:18:36  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ POST /aggregate/city started
+2025-03-18 16:18:37 DEBUG sqlx::query: /Users/tanghy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sqlx-core-0.8.3/src/logger.rs: summary="select count(pxzqmc) as value …" db.statement="\n\nselect count(pxzqmc) as value from public.city group by pxzqmc\n" rows_affected=1 rows_returned=1 elapsed=13.460091ms elapsed_secs=0.013460091
+2025-03-18 16:18:37  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← POST /aggregate/city completed in 17ms (status: 200 OK)
+2025-03-18 16:19:01  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ POST /aggregate/city started
+2025-03-18 16:19:01 DEBUG sqlx::query: /Users/tanghy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sqlx-core-0.8.3/src/logger.rs: summary="select pxzqmc as name, …" db.statement="\n\nselect pxzqmc as name, count(pxzqmc) as value from public.city group by pxzqmc\n" rows_affected=1 rows_returned=1 elapsed=3.048095ms elapsed_secs=0.003048095
+2025-03-18 16:19:01  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← POST /aggregate/city completed in 5ms (status: 200 OK)
+2025-03-18 16:19:20  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ POST /aggregate/city started
+2025-03-18 16:19:20 DEBUG sqlx::query: /Users/tanghy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sqlx-core-0.8.3/src/logger.rs: summary="select pxzqmc as name, …" db.statement="\n\nselect pxzqmc as name, count(fxzqmc) as value from public.city group by pxzqmc\n" rows_affected=0 rows_returned=0 elapsed=1.377966ms elapsed_secs=0.001377966
+2025-03-18 16:19:20  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← POST /aggregate/city completed in 3ms (status: 500 Internal Server Error)
+2025-03-18 16:19:35  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ POST /aggregate/county started
+2025-03-18 16:19:35 DEBUG sqlx::query: /Users/tanghy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sqlx-core-0.8.3/src/logger.rs: summary="select pxzqmc as name, …" db.statement="\n\nselect pxzqmc as name, count(fxzqmc) as value from public.county group by pxzqmc\n" rows_affected=1 rows_returned=1 elapsed=14.691325ms elapsed_secs=0.014691325
+2025-03-18 16:19:35  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← POST /aggregate/county completed in 16ms (status: 200 OK)
+2025-03-18 16:20:00  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ POST /aggregate/county started
+2025-03-18 16:20:00 DEBUG sqlx::query: /Users/tanghy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sqlx-core-0.8.3/src/logger.rs: summary="select pxzqmc as name, …" db.statement="\n\nselect pxzqmc as name, count(fxzqmc) as value from public.county group by fxzqmc\n" rows_affected=0 rows_returned=0 elapsed=10.530695ms elapsed_secs=0.010530695
+2025-03-18 16:20:00  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← POST /aggregate/county completed in 12ms (status: 500 Internal Server Error)
+2025-03-18 16:20:20  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ POST /aggregate/county started
+2025-03-18 16:20:20 DEBUG sqlx::query: /Users/tanghy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sqlx-core-0.8.3/src/logger.rs: summary="select fxzqmc as name, …" db.statement="\n\nselect fxzqmc as name, count(fxzqmc) as value from public.county group by fxzqmc\n" rows_affected=22 rows_returned=22 elapsed=3.106193ms elapsed_secs=0.003106193
+2025-03-18 16:20:20  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← POST /aggregate/county completed in 5ms (status: 200 OK)
+2025-03-18 16:20:40  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ POST /aggregate/town started
+2025-03-18 16:20:40 DEBUG sqlx::query: /Users/tanghy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sqlx-core-0.8.3/src/logger.rs: summary="select fxzqmc as name, …" db.statement="\n\nselect fxzqmc as name, count(fxzqmc) as value from public.town group by fxzqmc\n" rows_affected=22 rows_returned=22 elapsed=38.282567ms elapsed_secs=0.038282567
+2025-03-18 16:20:40  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← POST /aggregate/town completed in 40ms (status: 200 OK)

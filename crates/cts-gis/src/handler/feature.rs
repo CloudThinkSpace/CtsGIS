@@ -12,7 +12,6 @@ pub async fn feature_handler(
     Path(feature_name): Path<String>,
     Json(param): Json<CtsParam>,
 ) -> impl IntoResponse {
-    let param = param.search_param();
     // 获取数据库连接池
     let pool = pool.as_ref();
     // 配置

@@ -3,5 +3,5 @@ use axum::Router;
 use axum::routing::post;
 
 pub fn aggregate_router() -> Router {
-    Router::new().route("/", post(aggregate_handler))
+    Router::new().route("/{table_name}", post(aggregate_handler))
 }
