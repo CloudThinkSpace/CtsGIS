@@ -4,6 +4,7 @@ use cts_common::model::jwt::SECRET;
 use cts_common::model::{jwt::Claims, request::user::RequestUser};
 use cts_middleware::extract::db::DbPool;
 use jsonwebtoken::{EncodingKey, Header};
+use response_utils::res::ResResult;
 
 pub async fn login(DbPool(_pool): DbPool, Json(user): Json<RequestUser>) -> impl IntoResponse {
     let exp = Local::now().timestamp_millis() + 3600 * 1000;
@@ -25,4 +26,8 @@ pub async fn login(DbPool(_pool): DbPool, Json(user): Json<RequestUser>) -> impl
         }
         Err(_) => (StatusCode::UNAUTHORIZED, "1111").into_response(),
     }
+}
+
+pub async fn logout(DbPool(_pool): DbPool, Json(_user): Json<RequestUser>) -> impl IntoResponse {
+    ResResult::with_success("退出成功")
 }

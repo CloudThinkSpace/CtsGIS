@@ -1,0 +1,101 @@
+2025-03-19 09:12:38  INFO cts_common::config: crates/cts-common/src/config.rs: Read the configuration file from: config/config.yml    
+2025-03-19 09:12:38  INFO cts_common::config: crates/cts-common/src/config.rs: Loading the config file succeeded.    
+2025-03-19 09:14:59  INFO cts_middleware::middleware::auth: crates/cts-middleware/src/middleware/auth.rs: 开始时间：1742346899314,
+结束时间：1742285365535
+2025-03-19 09:15:18  INFO cts_middleware::middleware::auth: crates/cts-middleware/src/middleware/auth.rs: 开始时间：1742346918023,
+结束时间：1742285365535
+2025-03-19 09:15:41  INFO cts_middleware::middleware::auth: crates/cts-middleware/src/middleware/auth.rs: 开始时间：1742346941336,
+结束时间：1741921130428
+2025-03-19 09:15:43  INFO cts_middleware::middleware::auth: crates/cts-middleware/src/middleware/auth.rs: 开始时间：1742346943037,
+结束时间：1741921130428
+2025-03-19 09:15:43  INFO cts_middleware::middleware::auth: crates/cts-middleware/src/middleware/auth.rs: 开始时间：1742346943671,
+结束时间：1741921130428
+2025-03-19 09:15:44  INFO cts_middleware::middleware::auth: crates/cts-middleware/src/middleware/auth.rs: 开始时间：1742346944254,
+结束时间：1741921130428
+2025-03-19 09:42:11  INFO cts_common::config: crates/cts-common/src/config.rs: Read the configuration file from: config/config.yml    
+2025-03-19 09:42:11  INFO cts_common::config: crates/cts-common/src/config.rs: Loading the config file succeeded.    
+2025-03-19 09:47:12  INFO cts_common::config: crates/cts-common/src/config.rs: Read the configuration file from: config/config.yml    
+2025-03-19 09:47:12  INFO cts_common::config: crates/cts-common/src/config.rs: Loading the config file succeeded.    
+2025-03-19 09:49:53  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ GET / started
+2025-03-19 09:49:53  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← GET / completed in 2ms (status: 200 OK)
+2025-03-19 09:49:57  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ GET / started
+2025-03-19 09:49:57  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← GET / completed in 0ms (status: 401 Unauthorized)
+2025-03-19 09:50:39  INFO cts_common::config: crates/cts-common/src/config.rs: Read the configuration file from: config/config.yml    
+2025-03-19 09:50:39  INFO cts_common::config: crates/cts-common/src/config.rs: Loading the config file succeeded.    
+2025-03-19 09:50:44  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ GET / started
+2025-03-19 09:50:44  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← GET / completed in 0ms (status: 200 OK)
+2025-03-19 10:08:01  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ GET / started
+2025-03-19 10:08:01  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← GET / completed in 0ms (status: 200 OK)
+2025-03-19 11:14:56  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ GET / started
+2025-03-19 11:14:56  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← GET / completed in 0ms (status: 200 OK)
+2025-03-19 11:14:57  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ GET / started
+2025-03-19 11:14:57  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← GET / completed in 0ms (status: 200 OK)
+2025-03-19 12:03:22  INFO cts_common::config: crates/cts-common/src/config.rs: Read the configuration file from: config/config.yml    
+2025-03-19 12:03:22  INFO cts_common::config: crates/cts-common/src/config.rs: Loading the config file succeeded.    
+2025-03-19 14:09:18  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ GET / started
+2025-03-19 14:09:18  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← GET / completed in 2ms (status: 200 OK)
+2025-03-19 14:09:20  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ GET /favicon.ico started
+2025-03-19 14:09:20  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← GET /favicon.ico completed in 0ms (status: 401 Unauthorized)
+2025-03-19 22:55:03  INFO cts_common::config: crates/cts-common/src/config.rs: Read the configuration file from: config/config.yml    
+2025-03-19 22:55:03  INFO cts_common::config: crates/cts-common/src/config.rs: Loading the config file succeeded.    
+2025-03-19 22:55:49  INFO cts_common::config: crates/cts-common/src/config.rs: Read the configuration file from: config/config.yml    
+2025-03-19 22:55:49  INFO cts_common::config: crates/cts-common/src/config.rs: Loading the config file succeeded.    
+2025-03-19 22:56:13  INFO cts_common::config: crates/cts-common/src/config.rs: Read the configuration file from: config/config.yml    
+2025-03-19 22:56:13  INFO cts_common::config: crates/cts-common/src/config.rs: Loading the config file succeeded.    
+2025-03-19 22:57:46  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ POST /upload started
+2025-03-19 22:57:46  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← POST /upload completed in 0ms (status: 400 Bad Request)
+2025-03-19 22:59:20  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ POST /upload started
+2025-03-19 22:59:20  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← POST /upload completed in 0ms (status: 400 Bad Request)
+2025-03-19 22:59:53  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ POST /upload started
+2025-03-19 22:59:53  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← POST /upload completed in 0ms (status: 400 Bad Request)
+2025-03-19 22:59:58  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ POST /upload started
+2025-03-19 22:59:58  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← POST /upload completed in 13ms (status: 200 OK)
+2025-03-19 23:01:47  INFO cts_common::config: crates/cts-common/src/config.rs: Read the configuration file from: config/config.yml    
+2025-03-19 23:01:47  INFO cts_common::config: crates/cts-common/src/config.rs: Loading the config file succeeded.    
+2025-03-19 23:02:26  INFO cts_common::config: crates/cts-common/src/config.rs: Read the configuration file from: config/config.yml    
+2025-03-19 23:02:26  INFO cts_common::config: crates/cts-common/src/config.rs: Loading the config file succeeded.    
+2025-03-19 23:03:21  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ GET /browse/upload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.png started
+2025-03-19 23:03:21  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← GET /browse/upload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.png completed in 2ms (status: 200 OK)
+2025-03-19 23:05:10  INFO cts_common::config: crates/cts-common/src/config.rs: Read the configuration file from: config/config.yml    
+2025-03-19 23:05:10  INFO cts_common::config: crates/cts-common/src/config.rs: Loading the config file succeeded.    
+2025-03-19 23:05:28  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ GET /browse/upload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.pngupload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.png started
+2025-03-19 23:05:28  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← GET /browse/upload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.pngupload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.png completed in 3ms (status: 200 OK)
+2025-03-19 23:06:09  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ GET /download/upload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.pngupload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.png started
+2025-03-19 23:06:09  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← GET /download/upload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.pngupload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.png completed in 0ms (status: 200 OK)
+2025-03-19 23:11:46  INFO cts_common::config: crates/cts-common/src/config.rs: Read the configuration file from: config/config.yml    
+2025-03-19 23:11:46  INFO cts_common::config: crates/cts-common/src/config.rs: Loading the config file succeeded.    
+2025-03-19 23:11:56  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ GET /browse/upload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.pngupload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.png started
+2025-03-19 23:12:00  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ GET /browse/upload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.pngupload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.png started
+2025-03-19 23:12:10  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ GET /browse/upload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.pngupload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.png started
+2025-03-19 23:12:11  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ GET /browse/upload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.pngupload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.png started
+2025-03-19 23:12:11  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ GET /browse/upload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.pngupload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.png started
+2025-03-19 23:12:11  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ GET /browse/upload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.pngupload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.png started
+2025-03-19 23:12:16  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ GET /browse/upload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.pngupload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.png started
+2025-03-19 23:12:46  INFO cts_common::config: crates/cts-common/src/config.rs: Read the configuration file from: config/config.yml    
+2025-03-19 23:12:46  INFO cts_common::config: crates/cts-common/src/config.rs: Loading the config file succeeded.    
+2025-03-19 23:12:46  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ GET /browse/upload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.pngupload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.png started
+2025-03-19 23:12:46  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← GET /browse/upload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.pngupload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.png completed in 0ms (status: 200 OK)
+2025-03-19 23:12:53  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ GET /browse/upload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.pngupload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.png started
+2025-03-19 23:12:53  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← GET /browse/upload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.pngupload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.png completed in 0ms (status: 200 OK)
+2025-03-19 23:12:58  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ GET /browse/upload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.pngupload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.png started
+2025-03-19 23:12:58  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← GET /browse/upload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.pngupload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.png completed in 0ms (status: 200 OK)
+2025-03-19 23:13:10  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ GET /browse/upload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.pngupload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.png started
+2025-03-19 23:13:10  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← GET /browse/upload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.pngupload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.png completed in 0ms (status: 200 OK)
+2025-03-19 23:13:23  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ GET /browse/upload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.pngupload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.png started
+2025-03-19 23:13:23  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← GET /browse/upload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.pngupload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.png completed in 0ms (status: 200 OK)
+2025-03-19 23:14:16  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ GET /browse/upload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.png started
+2025-03-19 23:14:16  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← GET /browse/upload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.png completed in 1ms (status: 200 OK)
+2025-03-19 23:14:23  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ GET /browse/upload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.pngupload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.png started
+2025-03-19 23:14:23  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← GET /browse/upload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.pngupload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.png completed in 0ms (status: 200 OK)
+2025-03-19 23:14:40  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ GET /browse/upload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.png started
+2025-03-19 23:14:40  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← GET /browse/upload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.png completed in 1ms (status: 200 OK)
+2025-03-19 23:14:41  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ GET /favicon.ico started
+2025-03-19 23:14:41  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← GET /favicon.ico completed in 0ms (status: 404 Not Found)
+2025-03-19 23:15:03  INFO cts_common::config: crates/cts-common/src/config.rs: Read the configuration file from: config/config.yml    
+2025-03-19 23:15:03  INFO cts_common::config: crates/cts-common/src/config.rs: Loading the config file succeeded.    
+2025-03-19 23:15:31  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ GET /download/upload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.png started
+2025-03-19 23:15:31  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← GET /download/upload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.png completed in 1ms (status: 200 OK)
+2025-03-19 23:15:36  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ GET /browse/upload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.png started
+2025-03-19 23:15:36  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← GET /browse/upload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.png completed in 0ms (status: 200 OK)
+2025-03-19 23:15:38  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ GET /browse/upload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.png started
+2025-03-19 23:15:38  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← GET /browse/upload/2025/3/19/22/59/3d4c7685-62a7-4fbb-91c7-efc3d00619f8.png completed in 0ms (status: 200 OK)

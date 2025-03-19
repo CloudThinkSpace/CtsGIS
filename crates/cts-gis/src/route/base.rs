@@ -1,7 +1,14 @@
-use axum::{Router, routing::post};
+use axum::{Router, routing::get};
+use login::login_router;
 
-use crate::handler::base::login;
+pub mod login;
 
-pub fn base_router() -> Router {
-    Router::new().route("/login", post(login))
+pub fn noauth_router() -> Router {
+    Router::new()
+        .route("/", get(root))
+        .nest("/base", login_router())
+}
+
+async fn root() -> &'static str {
+    "Welcome to CTS GIS Server!"
 }

@@ -211,3 +211,5 @@
 2025-03-18 16:20:40  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: →→→ POST /aggregate/town started
 2025-03-18 16:20:40 DEBUG sqlx::query: /Users/tanghy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sqlx-core-0.8.3/src/logger.rs: summary="select fxzqmc as name, …" db.statement="\n\nselect fxzqmc as name, count(fxzqmc) as value from public.town group by fxzqmc\n" rows_affected=22 rows_returned=22 elapsed=38.282567ms elapsed_secs=0.038282567
 2025-03-18 16:20:40  INFO cts_middleware::middleware::log: crates/cts-middleware/src/middleware/log.rs: ←←← POST /aggregate/town completed in 40ms (status: 200 OK)
+2025-03-18 21:00:50  INFO cts_common::config: crates/cts-common/src/config.rs: Read the configuration file from: config/config.yml    
+2025-03-18 21:00:50  INFO cts_common::config: crates/cts-common/src/config.rs: Loading the config file succeeded.    

@@ -5,10 +5,20 @@ members = [
     "crates/cts-gis",
     "crates/cts-log",
     "crates/cts-mbtiles",
-    "crates/cts-middleware",
+    "crates/cts-middleware", "crates/cts-upload-server",
     "crates/cts-utils",
     "crates/cts-webui",
 ]
+
+[workspace.package]
+authors = ["tanghy <tanghy@cloudthink.space>"]
+homepage = "https://www.cloudthink.space"
+publish = false
+edition = "2021"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/maplibre/martin"
+rust-version = "1.85.0"
+
 [workspace.dependencies]
 # 模块依赖
 cts-common = { path = "crates/cts-common" }
@@ -19,6 +29,7 @@ cts-log = { path = "crates/cts-log" }
 response_utils = { git = "https://github.com/CloudThinkSpace/cts-base", package = "response_utils", version = "0.1.1" }
 cts-pgrow = { git = "https://github.com/CloudThinkSpace/cts-base", package = "cts-pgrow", version = "0.1.1" }
 cts-sql-expression = { git = "https://github.com/CloudThinkSpace/cts-base", package = "cts-sql-expression", version = "0.1.0" }
+cts-upload = { git = "https://github.com/CloudThinkSpace/cts-base", package = "cts-upload", version = "0.1.0" }
 
 # 第三方库依赖
 axum = "0.8.1"

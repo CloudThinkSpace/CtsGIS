@@ -9,6 +9,7 @@
       <sourceFolder url="file://$MODULE_DIR$/crates/cts-middleware/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/crates/cts-utils/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/crates/cts-webui/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/crates/cts-upload-server/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
