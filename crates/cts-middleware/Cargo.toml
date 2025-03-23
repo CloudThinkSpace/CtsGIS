@@ -1,0 +1,18 @@
+[package]
+name = "cts-middleware"
+version = "0.1.0"
+authors.workspace = true
+homepage.workspace = true
+publish.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+axum.workspace = true
+sqlx = { workspace = true, features = ["postgres"] }
+cts-common.workspace = true
+tracing.workspace = true
+jsonwebtoken.workspace = true
+chrono.workspace = true

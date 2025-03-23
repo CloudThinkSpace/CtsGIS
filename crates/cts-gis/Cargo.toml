@@ -1,0 +1,31 @@
+[package]
+name = "cts-gis"
+version = "0.1.0"
+authors.workspace = true
+homepage.workspace = true
+publish.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+axum.workspace = true
+tokio = { workspace = true, features = ["full"] }
+tracing.workspace = true
+tower.workspace = true
+serde_json.workspace = true
+serde = { workspace = true, features = ["derive"] }
+cts-log.workspace = true
+cts-common.workspace = true
+cts-utils.workspace = true
+cts-middleware.workspace = true
+log.workspace = true
+tower-http = { workspace = true, features = ["cors", "fs"] }
+thiserror.workspace = true
+sqlx = { workspace = true, features = ["runtime-tokio-rustls", "postgres"] }
+jsonwebtoken.workspace = true
+chrono.workspace = true
+response_utils.workspace = true
+cts-pgrow.workspace = true
+cts-sql-expression.workspace = true
