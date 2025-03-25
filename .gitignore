@@ -6,3 +6,4 @@ logs
 config
 .idea
 Cargo.lock
+volume

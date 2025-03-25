@@ -4,9 +4,12 @@ use cts_common::{config::Config, utils::ip::get_local_ip};
 use std::sync::Arc;
 use tokio::net::TcpListener;
 use tracing::error;
+use cts_common::license::license;
 
 /// @description 服务启动函数
 pub async fn start() {
+    // 许可检查
+    license("UploadServer");
     // 加载配置文件
     let config = match Config::load_with_config("config/upload-config.yml") {
         Ok(data) => data,

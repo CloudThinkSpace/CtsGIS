@@ -31,6 +31,7 @@ response_utils = { git = "https://github.com/CloudThinkSpace/cts-base", package 
 cts-pgrow = { git = "https://github.com/CloudThinkSpace/cts-base", package = "cts-pgrow", version = "0.1.1" }
 cts-sql-expression = { git = "https://github.com/CloudThinkSpace/cts-base", package = "cts-sql-expression", version = "0.1.0" }
 cts-upload = { git = "https://github.com/CloudThinkSpace/cts-base", package = "cts-upload", version = "0.1.0" }
+cts-license = { git = "https://github.com/CloudThinkSpace/cts-base", package = "cts-license", version = "0.1.0" }
 
 # 第三方库依赖
 axum = "0.8.1"

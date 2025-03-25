@@ -1,0 +1,133 @@
+version: '3'
+services:
+
+  # 数据库配置
+  cts-postgres:
+    # 数据库容器名称
+    container_name: nx-postgres
+    # 镜像名称及版本
+    image: kartoza/postgis:latest
+    restart: unless-stopped
+    #    端口
+    ports:
+      - "5432:5432"
+    # 数据卷
+    volumes:
+      - ./volume/postgres:/var/lib/postgresql
+    # 环境变量
+    environment:
+      # 数据库管理员
+      - POSTGRES_USER=postgres
+      # 数据库密码
+      - POSTGRES_PASS=postgres
+      # 数据库名称
+      - POSTGRES_DBNAME=postgres
+      # 扩展插件
+      - POSTGRES_MULTIPLE_EXTENSIONS=postgis,postgis_topology,postgis_raster
+    # 网络连接
+    networks:
+      - cts
+
+  nx-feature-server:
+    build:
+      context: ./
+      dockerfile: Dockerfile-Feature
+    image: feature-server:latest
+    container_name: nx-feature-server
+    restart: unless-stopped
+    depends_on:
+      - cts-postgres
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./volume/cts-feature-server/config:/app/config
+    networks:
+      - cts
+    privileged: true
+
+  nx-search-server:
+    build:
+      context: ./
+      dockerfile: Dockerfile-Search
+    image: search-server:latest
+    container_name: nx-search-server
+    restart: unless-stopped
+    depends_on:
+      - cts-postgres
+    ports:
+      - "4001:4001"
+    volumes:
+      - ./volume/cts-search-server/config:/app/config
+    networks:
+      - cts
+    privileged: true
+
+  nx-upload-server:
+    build:
+      context: ./
+      dockerfile: Dockerfile-Upload
+    image: upload-server:latest
+    container_name: nx-upload-server
+    restart: unless-stopped
+    depends_on:
+      - cts-postgres
+    ports:
+      - "4002:4002"
+    volumes:
+      - ./volume/cts-upload-server/config:/app/config
+    networks:
+      - cts
+    privileged: true
+    dns:
+      - 8.8.8.8  # 使用Google的公共DNS
+      - 8.8.4.4  # 使用Google的另一个公共DNS
+
+  nx-auth-server:
+    build:
+      context: ./
+      dockerfile: Dockerfile-Auth
+    image: auth-server:latest
+    container_name: nx-auth-server
+    restart: unless-stopped
+    depends_on:
+      - cts-postgres
+    ports:
+      - "4003:4003"
+    volumes:
+      - ./volume/cts-auth-server/config:/app/config
+    networks:
+      - cts
+    privileged: true
+
+  nx-tiled-server:
+    image: cts/tiled-server:latest
+    container_name: nx-tiled-server
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./volume/cts-tile/config:/app/config
+      - ./volume/cts-tile/mbtiles:/app/mbtiles
+    networks:
+      - cts
+    privileged: true
+
+  nx-app:
+    container_name: nx-app
+    image: nginx:1.17.9-alpine
+    restart: unless-stopped
+    environment:
+      - LANG=zh_CN.UTF-8
+    ports:
+      - "80:80"
+    volumes:
+      - ./volume/nginx:/etc/nginx/conf.d
+      - ./volume/apps:/apps
+      - ./volume/nginx/logs:/var/log/nginx
+      - ./volume/nginx/image:/image
+    networks:
+      - cts
+
+networks:
+  cts:
+    driver: bridge

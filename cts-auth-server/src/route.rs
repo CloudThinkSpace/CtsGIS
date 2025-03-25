@@ -12,7 +12,7 @@ pub fn root_route() -> Router {
     let cors = CorsLayer::new().allow_methods(Any).allow_headers(Any);
 
     Router::new()
-        .merge(login_router())
+        .nest("/auth", login_router())
         .layer(cors)
         .layer(middleware::from_fn(logging_middleware))
         .layer(DefaultBodyLimit::max(1024 * 1024 * 20))
