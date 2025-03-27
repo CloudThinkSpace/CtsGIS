@@ -24,8 +24,7 @@ pub async fn feature_handler(
         .await;
     match result {
         Ok(data) => {
-            let result = data.to_json();
-            ResResult::with_success(result)
+            ResResult::with_success(data)
         }
         Err(err) => ResResult::<()>::with_error(&err.to_string()),
     }
@@ -46,7 +45,9 @@ pub async fn feature_id_handler(
         .query_one()
         .await;
     match result {
-        Ok(data) => ResResult::with_success(data),
+        Ok(data) => {
+            ResResult::with_success(data)
+        },
         Err(err) => ResResult::<()>::with_error(&err.to_string()),
     }
 }

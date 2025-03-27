@@ -24,8 +24,7 @@ pub async fn search_handler(
         .await;
     match result {
         Ok(data) => {
-            let result = data.to_json();
-            ResResult::with_success(result)
+            ResResult::with_success(data)
         }
         Err(err) => ResResult::<()>::with_error(&err.to_string()),
     }

@@ -59,6 +59,7 @@ services:
       - "4001:4001"
     volumes:
       - ./volume/cts-search-server/config:/app/config
+      - ./volume/cts-search-server/data:/app/data
       - ./volume/cts-search-server/license.lic:/app/license.lic
     networks:
       - cts
