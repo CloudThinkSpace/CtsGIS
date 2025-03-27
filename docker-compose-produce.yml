@@ -41,6 +41,7 @@ services:
       - "4000:4000"
     volumes:
       - ./volume/cts-feature-server/config:/app/config
+      - ./volume/cts-feature-server/license.lic:/app/license.lic
     networks:
       - cts
     privileged: true
@@ -58,6 +59,7 @@ services:
       - "4001:4001"
     volumes:
       - ./volume/cts-search-server/config:/app/config
+      - ./volume/cts-search-server/license.lic:/app/license.lic
     networks:
       - cts
     privileged: true
@@ -75,6 +77,7 @@ services:
       - "4002:4002"
     volumes:
       - ./volume/cts-upload-server/config:/app/config
+      - ./volume/cts-upload-server/license.lic:/app/license.lic
     networks:
       - cts
     privileged: true
@@ -95,6 +98,7 @@ services:
       - "4003:4003"
     volumes:
       - ./volume/cts-auth-server/config:/app/config
+      - ./volume/cts-auth-server/license.lic:/app/license.lic
     networks:
       - cts
     privileged: true
