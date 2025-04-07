@@ -4,10 +4,10 @@ members = [
     "crates/cts-common",
 #    "crates/cts-gis",
     "crates/cts-log",
-    "crates/cts-mbtiles",
+#    "crates/cts-mbtiles",
     "crates/cts-middleware",
-    "crates/cts-utils",
-    "crates/cts-webui",
+#    "crates/cts-utils",
+#    "crates/cts-webui",
     "cts-upload-server", "cts-auth-server", "cts-feature-server", "cts-search-server",
 ]
 
@@ -23,12 +23,12 @@ rust-version = "1.85.0"
 [workspace.dependencies]
 # 模块依赖
 cts-common = { path = "crates/cts-common" }
-cts-mbtiles = { path = "crates/cts-mbtiles" }
-cts-utils = { path = "crates/cts-utils" }
+#cts-mbtiles = { path = "crates/cts-mbtiles" }
+#cts-utils = { path = "crates/cts-utils" }
 cts-middleware = { path = "crates/cts-middleware" }
 cts-log = { path = "crates/cts-log" }
 response_utils = { git = "https://github.com/CloudThinkSpace/cts-base", package = "response_utils", version = "0.1.1" }
-cts-pgrow = { git = "https://github.com/CloudThinkSpace/cts-base", package = "cts-pgrow", version = "0.1.1" }
+#cts-pgrow = { git = "https://github.com/CloudThinkSpace/cts-base", package = "cts-pgrow", version = "0.1.1" }
 cts-sql-expression = { git = "https://github.com/CloudThinkSpace/cts-base", package = "cts-sql-expression", version = "0.1.0" }
 cts-upload = { git = "https://github.com/CloudThinkSpace/cts-base", package = "cts-upload", version = "0.1.0" }
 cts-license = { git = "https://github.com/CloudThinkSpace/cts-base", package = "cts-license", version = "0.1.0" }

@@ -14,10 +14,6 @@ pub async fn aggregate_handler(
     Path(table_name): Path<String>,
     Json(param): Json<CtsParam>,
 ) -> impl IntoResponse {
-    // 判断是否有统计参数
-    if param.group_by.is_none() {
-        return ResResult::<()>::with_error("缺少【统计】参数错误");
-    }
     // 获取数据库连接池
     let pool = pool.as_ref();
     let schema = config.database.schema.clone();
