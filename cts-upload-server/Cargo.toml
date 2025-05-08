@@ -20,3 +20,6 @@ tower-http = { workspace = true, features = ["cors", "fs"] }
 response_utils.workspace = true
 cts-upload = {workspace = true, features = ["multipart","writer","reader"]}
 tracing.workspace = true
+cts-sql-expression.workspace = true
+serde.workspace = true
+serde_json.workspace = true

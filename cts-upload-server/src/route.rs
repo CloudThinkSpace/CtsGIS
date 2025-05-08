@@ -1,4 +1,4 @@
-use crate::upload_download::{download, image, upload};
+use crate::upload_download::{download, image, upload, upload_table};
 use axum::extract::DefaultBodyLimit;
 use axum::routing::{get, post};
 use axum::{middleware, Router};
@@ -12,6 +12,7 @@ pub fn root_route() -> Router {
 
     Router::new()
         .route("/upload", post(upload))
+        .route("/upload/{table}", post(upload_table))
         .route("/browse/{*path}", get(image))
         .route("/download/{*path}", get(download))
         .layer(cors)

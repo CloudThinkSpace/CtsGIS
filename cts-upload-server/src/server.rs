@@ -5,5 +5,5 @@ use cts_common::server::cts_start;
 pub async fn start() {
     // 路由
     let app = root_route();
-    cts_start(app, "UploadServer", Some("config/upload-config.yml"), false).await;
+    cts_start(app, "UploadServer", Some("config/upload-config.yml"), true).await;
 }

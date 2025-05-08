@@ -7,3 +7,4 @@ config
 .idea
 Cargo.lock
 volume
+font

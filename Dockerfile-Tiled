@@ -1,0 +1,18 @@
+FROM maplibre/martin:latest
+
+# 2. 添加预编译字体
+COPY fonts /app/fonts
+
+# 3. 添加自定义配置
+COPY config/tiled-config.yml /app/config.yaml
+
+# 4. 设置环境变量（可选）
+ENV MARTIN_WORKER_THREADS=4
+
+# 设置工作目录
+WORKDIR /app
+
+EXPOSE  3000/tcp
+ENTRYPOINT ["tini", "--"]
+# 运行可执行文件
+CMD ["./martin","-c","config/config.yml"]

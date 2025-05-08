@@ -113,6 +113,7 @@ services:
     volumes:
       - ./volume/cts-tile/config:/app/config
       - ./volume/cts-tile/mbtiles:/app/mbtiles
+      - ./volume/cts-tile/fonts:/app/fonts
     networks:
       - cts
     privileged: true
